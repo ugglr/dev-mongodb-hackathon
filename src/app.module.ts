@@ -11,6 +11,7 @@ import { AppEventsModule } from './app-events/app-events.module';
       autoSchemaFile: './src/schema.gql',
       sortSchema: true,
       playground: true,
+      introspection: true,
     }),
     AppEventsModule,
   ],
