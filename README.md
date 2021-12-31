@@ -1,3 +1,24 @@
+# dev.to MongoDB Hackathon project
+
+By using MongoDB charting tools it's easy to setup ones own events driven analytics server. It's flexibility is far superior than using a SAAS, all the while keeing your users data safe and secure and not sharing it to any third partys unknowningly. 
+
+Demonstration Links:
+- backend: https://devmongo.herokuapp.com/
+- frontend: https://goofy-galileo-d36254.netlify.app/
+
+
+
+## Built with
+- nest.js
+- mongodb
+- mongoose
+- graphql
+- apollo server + client
+- react
+- typescript
+
+
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>
