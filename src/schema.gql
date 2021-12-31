@@ -2,6 +2,27 @@
 # THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
 # ------------------------------------------------------
 
+type AppEventDto {
+  date: DateTime!
+  event: String!
+  id: String!
+}
+
+input CreateAppEventInput {
+  date: DateTime
+  event: String!
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
+type Mutation {
+  """Creates a new app event"""
+  createAppEvent(input: CreateAppEventInput!): AppEventDto!
+}
+
 type Query {
   hello: String!
 }
