@@ -10,6 +10,7 @@ import { AppEventsModule } from './app-events/app-events.module';
     GraphQLModule.forRoot({
       autoSchemaFile: './src/schema.gql',
       sortSchema: true,
+      playground: true,
     }),
     AppEventsModule,
   ],

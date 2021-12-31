@@ -7,7 +7,10 @@ import { CreateAppEventInput } from './inputs/create-app-event.input';
 export class AppEventsResolver {
   constructor(private appEventService: AppEventsService) {}
 
-  @Mutation(() => AppEventDto, { description: 'Creates a new app event' })
+  @Mutation(() => AppEventDto, {
+    name: 'createAppEvent',
+    description: 'Creates a new app event',
+  })
   async createAppEvent(
     @Args('input') createAppEventInput: CreateAppEventInput,
   ): Promise<AppEventDto> {
