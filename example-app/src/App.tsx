@@ -63,6 +63,7 @@ function App() {
         <div className={styles.chartsContainer}>
           <p>Refreshes every 10s</p>
           <iframe
+            title="mongoChart"
             style={{
               background: '#FFFFFF',
               border: 'none',
