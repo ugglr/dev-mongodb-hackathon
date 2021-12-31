@@ -3,6 +3,7 @@ import { GraphQLModule } from '@nestjs/graphql';
 import { AppController } from './app.controller';
 import { AppResolver } from './app.resolver';
 import { AppService } from './app.service';
+import { AppEventsModule } from './app-events/app-events.module';
 
 @Module({
   imports: [
@@ -10,6 +11,7 @@ import { AppService } from './app.service';
       autoSchemaFile: './src/schema.gql',
       sortSchema: true,
     }),
+    AppEventsModule,
   ],
   controllers: [AppController],
   providers: [AppService, AppResolver],
