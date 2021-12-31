@@ -1,15 +1,11 @@
-import {
-  ApolloClient,
-  InMemoryCache,
-  gql,
-  useMutation,
-  ApolloProvider,
-} from '@apollo/client';
+import { ApolloClient, InMemoryCache, gql } from '@apollo/client';
 import Layout from './components/Layout';
 
+import styles from './App.module.css';
+
 const M_SEND_EVENT = gql`
-  mutation CreateEvent($input: input) {
-    createAppEvent(input: $input) {
+  mutation CreateEvent($event: String!) {
+    createAppEvent(input: { event: $event }) {
       id
     }
   }
@@ -22,17 +18,14 @@ const client = new ApolloClient({
 function App() {
   const sendEvent = async (eventName: string) => {
     try {
-      const res = await client.mutate({
+      await client.mutate({
         mutation: M_SEND_EVENT,
         variables: {
-          input: {
-            event: eventName,
-          },
+          event: eventName,
         },
       });
-      console.log(res);
     } catch (err) {
-      console.error(err);
+      console.log(JSON.stringify(err, null, 2));
     }
   };
   return (
@@ -40,12 +33,25 @@ function App() {
       <div>
         <h1>Test Application</h1>
         <h3>Click around on the buttons and see the charts grow!</h3>
-        <div>
-          <button onClick={async () => await sendEvent('CTA1 clicked!')}>
+        <div className={styles.buttonsContainer}>
+          <button
+            className={styles.baseButton}
+            onClick={async () => await sendEvent('CTA1 clicked!')}
+          >
             CTA1
           </button>
-          <button>CTA2</button>
-          <button>CTA3</button>
+          <button
+            className={styles.baseButton}
+            onClick={async () => await sendEvent('CTA2 clicked!')}
+          >
+            CTA2
+          </button>
+          <button
+            className={styles.baseButton}
+            onClick={async () => await sendEvent('CTA1 clicked!')}
+          >
+            CTA3
+          </button>
         </div>
       </div>
     </Layout>
