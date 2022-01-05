@@ -1,0 +1,43 @@
+.container {
+  padding-top: 50px;
+}
+
+.navContainer {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.linksContainer {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.link {
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.analyticsCTA {
+  align-items: center;
+  background-color: blueviolet;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  justify-content: center;
+  margin-left: 32px;
+  padding: 16px;
+  text-decoration: none;
+}

@@ -1,5 +1,14 @@
 .container {
+  align-items: center;
   background-color: #dee2ee;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
   padding: 0 32px;
-  width: 50vw;
+  overflow: hidden;
+  width: 100vw;
+}
+
+.content {
+  width: 960px;
 }

@@ -9,9 +9,11 @@ type Props = { children: any };
 function Layout({ children }: Props): ReactElement {
   return (
     <div className={styles.container}>
-      <Header />
-      {children}
-      <Footer />
+      <div className={styles.content}>
+        <Header />
+        {children}
+        <Footer />
+      </div>
     </div>
   );
 }
