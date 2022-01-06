@@ -12,8 +12,8 @@ function Layout({ children }: Props): ReactElement {
       <div className={styles.content}>
         <Header />
         {children}
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 }

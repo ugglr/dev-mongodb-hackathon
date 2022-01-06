@@ -2,9 +2,10 @@
   align-items: center;
   background-color: #dee2ee;
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   flex-direction: column;
-  padding: 0 32px;
+  padding-top: 32px;
+  padding-bottom: 0;
   overflow: hidden;
   width: 100vw;
 }

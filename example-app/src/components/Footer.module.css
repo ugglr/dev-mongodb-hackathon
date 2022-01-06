@@ -1,44 +1,51 @@
 .container {
-  padding-top: 50px;
+  background-color: black;
+  color: white;
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  margin-top: 60px;
+  width: 100vw;
 }
 
-.navContainer {
+.content {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  width: 100%;
-}
-
-.logo {
-  color: black;
-  font-size: 28px;
-  font-weight: 800;
+  width: 960px;
 }
 
 .linksContainer {
   align-items: center;
   display: flex;
-  justify-content: space-between;
 }
 
 .link {
-  color: black;
-  font-size: 18px;
+  color: white;
+  font-size: 22px;
   font-weight: 600;
   text-decoration: none;
 }
 
-.analyticsCTA {
+.link:hover {
+  color: blueviolet;
+}
+
+.bottomCTA {
   align-items: center;
+  color: white;
   background-color: blueviolet;
   border-radius: 20px;
-  color: white;
   display: flex;
-  height: 50px;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 600;
+  padding: 16px;
   justify-content: center;
   margin-left: 32px;
-  padding: 16px;
   text-decoration: none;
+}
+
+.bottomCTA:hover {
+  background-color: white;
+  color: blueviolet;
 }

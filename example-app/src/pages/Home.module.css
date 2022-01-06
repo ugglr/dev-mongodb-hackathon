@@ -1,11 +1,42 @@
-.buttonsContainer {
+.heroContainer {
+  margin-top: 50px;
+}
+
+.heroTextContainer {
+  align-items: center;
   display: flex;
+  height: 350px;
   justify-content: space-between;
-  margin-top: 32px;
-  width: 100%;
+}
+
+.heroLeft {
+  width: 50%;
+}
+
+.heroRight {
+}
+
+.heroText {
 }
 
 .baseButton {
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: blueviolet;
+  cursor: pointer;
   height: 60px;
   width: 120px;
+}
+.baseButton:hover {
+  background-color: blueviolet;
+  color: white;
+}
+
+.section {
+  margin-top: 48px;
+}
+
+.section3 {
+  margin-top: 56px;
 }
