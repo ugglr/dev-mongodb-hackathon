@@ -1,4 +1,4 @@
-import { useMutation, gql } from '@apollo/client';
+import { useMutation } from '@apollo/client';
 import Lottie from 'react-lottie';
 import { M_NEW_EVENT } from '../graphql/new-event.mutation';
 import * as animationData from '../assets/63210-mongo.json';
